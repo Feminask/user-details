@@ -8,7 +8,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>contact list</title>
 </head>
-
+<!-- <ul class="list-group list-group-flush">
+    <li class="list-group-item"><B>Street:</B> ${i.address.street}</li>
+    <li class="list-group-item"><B>City:</B> ${i.address.city}</li>
+    <li class="list-group-item"><B>ZipCode:</B> ${i.address.zipcode}</li>
+  </ul>
+ -->
 <body>
     <h1 class="text-center mt-4"><U>USER DETAILS</U></h1>
 
@@ -28,12 +33,7 @@
             <H6 class="card-title"><B>User Name:</B> ${i.username}</H6>
             <h6 class="card-title"><b>E-mail:</b> ${i.email}</h6>
             <h6 class="card-title"><b>Phone:</b> ${i.phone}</h6>
-            <h6 class="card-title"><b>Address:</b></h6>
-            <ul class="list-group list-group-flush">
-    <li class="list-group-item"><B>Street:</B> ${i.address.street}</li>
-    <li class="list-group-item"><B>City:</B> ${i.address.city}</li>
-    <li class="list-group-item"><B>ZipCode:</B> ${i.address.zipcode}</li>
-  </ul>
+            <h6 class="card-title"><b>Address:</b>${i.address.street},${i.address.city},${i.address.zipcode}</h6>
   <H6 class="card-title"><B>Company Name:</B> ${i.company.name}</H6>
 
         </div>
